@@ -1,17 +1,12 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
+import AppShellMantine from '../components/AppShellMantine';
 
-export default function App(props: AppProps) {
+function App(props: AppProps) {
   const { Component, pageProps } = props;
 
   return (
     <>
-      <Head>
-        <title>Page title</title>
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-      </Head>
-
       <MantineProvider
         withGlobalStyles
         withNormalizeCSS
@@ -20,8 +15,12 @@ export default function App(props: AppProps) {
           colorScheme: 'light',
         }}
       >
-        <Component {...pageProps} />
+        <AppShellMantine>
+          <Component {...pageProps} />
+        </AppShellMantine>
       </MantineProvider>
     </>
   );
 }
+
+export default App

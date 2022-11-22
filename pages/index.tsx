@@ -1,21 +1,18 @@
 import Head from 'next/head'
 // import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Stack, Text } from '@mantine/core'
+import ContentCard from '../components/ContentCard'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+
+    <Stack>
       <Head>
         <title>Merry Berry</title>
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
 
-      <main className={styles.main}>
-
-      </main>
-
-      <footer className={styles.footer}>
-
-      </footer>
-    </div>
+      <ContentCard />
+    </Stack>
   )
 }
