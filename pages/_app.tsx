@@ -13,6 +13,20 @@ function App(props: AppProps) {
         theme={{
           /** Put your mantine theme override here */
           colorScheme: 'light',
+          components: {
+            Button: {
+              defaultProps: {
+                radius: 'xl',
+                size: 'md',
+                color: 'violet.4'
+              },
+            },
+            Title: {
+              defaultProps: {
+                color: 'grape.9'
+              },
+            },
+          },
         }}
       >
         <AppShellMantine>
