@@ -20,7 +20,7 @@ const FeedbackBox = ({ name, comment }: Props) => {
                     theme.colors.grape[2],
             },
         })}>
-            <Stack align="center" sx={{ width: 180 }} spacing='xs'>
+            <Stack align="center" sx={{ width: 180 }} spacing='md'>
                 <Text>{name}</Text>
                 <Text>{comment}</Text>
             </Stack>

@@ -23,7 +23,12 @@ function App(props: AppProps) {
             },
             Title: {
               defaultProps: {
-                color: 'grape.9'
+                color: 'grape.9',
+              },
+            },
+            Text: {
+              defaultProps: {
+                color: '#3b0947'
               },
             },
           },
