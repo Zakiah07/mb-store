@@ -1,7 +1,6 @@
 import {
 	AppShell,
 	Header,
-	Footer,
 	Text,
 	useMantineTheme,
 } from '@mantine/core';
@@ -22,9 +21,7 @@ function AppShellMantine({ children }: Props) {
 				},
 			}}
 			footer={
-				<Footer height={80} p="md" withBorder={false} sx={{ display: 'flex', justify: 'center', background: theme.colors.violet[0] }}>
-					<FooterCard />
-				</Footer>
+				<FooterCard />
 			}
 			header={
 				<Header height={{ base: 50, md: 70 }} p="md" withBorder={false} sx={{ background: theme.colors.violet[0] }}>
